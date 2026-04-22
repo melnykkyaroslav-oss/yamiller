@@ -5,90 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YaMiller</title>
     <link rel="icon" type="image/png" href="avatarr.png">
-    
     <style>
         body {
-            background-color: #050505;
+            background: #050505;
             color: #00F3FF;
-            font-family: 'Courier New', Courier, monospace;
+            font-family: 'Courier New', monospace;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
-            overflow: hidden;
-            text-align: center;
+            overflow-x: hidden;
         }
-
         .container {
-            border: 2px solid #00F3FF;
-            padding: 40px;
-            box-shadow: 0 0 20px #00F3FF;
-            background: rgba(0, 243, 255, 0.05);
-            max-width: 90%;
+            text-align: center;
+            padding: 30px;
+            border: 1px solid #00F3FF;
+            box-shadow: 0 0 25px rgba(0, 243, 255, 0.3);
+            background: rgba(0, 0, 0, 0.9);
+            width: 90%;
+            max-width: 450px;
+            border-radius: 5px;
         }
-
-        .logo-img {
-            width: 250px;
-            height: auto;
-            margin-bottom: 20px;
-            filter: drop-shadow(0 0 10px #00F3FF);
-        }
-
-        .tagline {
-            font-size: 1.2rem;
-            letter-spacing: 3px;
-            margin-bottom: 30px;
-            text-transform: uppercase;
-        }
-
+        h1 { letter-spacing: 5px; text-shadow: 0 0 10px #00F3FF; }
+        .tagline { color: #C0C0C0; font-size: 0.8em; margin-bottom: 30px; text-transform: uppercase; }
         .link-btn {
             display: block;
             width: 100%;
-            padding: 12px;
-            margin: 10px 0;
+            padding: 15px 0;
+            margin: 15px 0;
             color: #00F3FF;
             text-decoration: none;
             border: 1px solid #00F3FF;
-            transition: 0.3s;
-            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9em;
+            letter-spacing: 2px;
+            transition: all 0.4s ease;
             box-sizing: border-box;
         }
-
         .link-btn:hover {
             background: #00F3FF;
-            color: #050505;
-            box-shadow: 0 0 15px #00F3FF;
+            color: #000;
+            box-shadow: 0 0 40px #00F3FF;
+            transform: scale(1.02);
         }
-
+        /* РЕКЛАМНИЙ СЛОТ */
         .ad-container {
-            margin-top: 30px;
-            font-size: 0.8rem;
-            opacity: 0.6;
-            border-top: 1px solid rgba(0, 243, 255, 0.3);
-            padding-top: 15px;
+            margin-top: 40px;
+            padding: 10px;
+            border: 1px dashed #333;
+            min-height: 100px;
+            font-size: 9px;
+            color: #444;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <img src="avatarr.png" alt="YaMiller Logo" class="logo-img">
+        <img src="avatarr.png" alt="YaMiller Logo" style="width: 250px; height: auto; margin-bottom: 20px; filter: drop-shadow(0 0 10px #00F3FF);">
         
+        <h1 style="display: none;">YAMILLER</h1> 
         <div class="tagline">Technological Rebirth of Ukraine</div>
         
-        <a href="https://solo.to/yamiller" class="link-btn" target="_blank">OFFICIAL PROFILE</a>
-        <a href="#" class="link-btn">MUSIC (COMING SOON)</a>
-        <a href="#" class="link-btn">CYBER-NATION CHAT</a>
+        <a href="https://solo.to/yamiller" class="link-btn" target="_blank">Current Profile</a>
+        <a href="#" class="link-btn">Music (Coming Soon)</a>
+        <a href="#" class="link-btn">Cyber-Nation Chat</a>
         
-        <div class="ad-container">
-            SYSTEM STATUS: ONLINE<br>
-            © 2026 YAMILLER MUSIC
+        <div class="ad-container" id="ad-slot">
+            <div id="container-03c06bcff4c72b2dd03d22c4d73a287d"></div>
         </div>
     </div>
 
-    <script src="https://pl29224535.profitablecpmratenetwork.com/e9/5e/2d/e95e2d5f0ca318c3aba3e4c4b744d74e.js"></script>
+    <script async="async" data-cfasync="false" src="https://pl29224709.profitablecpmratenetwork.com/03c06bcff4c72b2dd03d22c4d73a287d/invoke.js"></script>
 
 </body>
 </html>
