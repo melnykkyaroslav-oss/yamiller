@@ -49,34 +49,28 @@
             align-items: center;
             padding: 12px;
             margin: 10px 0;
-            color: #FFF; /* Білий текст для кращої читабельності */
+            color: #00F3FF; /* Текст залишається блакитним */
             text-decoration: none;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(0, 243, 255, 0.3);
+            background: rgba(0, 243, 255, 0.03);
             transition: 0.3s;
             text-align: left;
             border-radius: 8px;
         }
 
-        /* ОРИГІНАЛЬНІ КОЛЬОРИ ІКОНОК */
+        /* ОРИГІНАЛЬНІ КОЛЬОРИ ТІЛЬКИ ДЛЯ ІКОНОК */
         .fa-telegram-plane { color: #26A5E4; }
         .fa-soundcloud { color: #FF5500; }
         .fa-tiktok { color: #FFF; }
         .fa-instagram { color: #E1306C; }
         .fa-youtube { color: #FF0000; }
 
-        /* ЕФЕКТИ ПРИ НАВЕДЕННІ */
         .social-card:hover {
+            background: rgba(0, 243, 255, 0.1);
+            border-color: #00F3FF;
+            box-shadow: 0 0 15px rgba(0, 243, 255, 0.4);
             transform: translateX(5px);
-            border-color: #FFF;
         }
-
-        /* Персоналізоване підсвічування для кожної платформи */
-        .telegram:hover { box-shadow: 0 0 15px rgba(38, 165, 228, 0.4); background: rgba(38, 165, 228, 0.1); }
-        .soundcloud:hover { box-shadow: 0 0 15px rgba(255, 85, 0, 0.4); background: rgba(255, 85, 0, 0.1); }
-        .tiktok:hover { box-shadow: 0 0 15px rgba(255, 255, 255, 0.2); background: rgba(255, 255, 255, 0.1); }
-        .instagram:hover { box-shadow: 0 0 15px rgba(225, 48, 108, 0.4); background: rgba(225, 48, 108, 0.1); }
-        .youtube:hover { box-shadow: 0 0 15px rgba(255, 0, 0, 0.4); background: rgba(255, 0, 0, 0.1); }
 
         .social-card i {
             font-size: 1.5em;
@@ -85,7 +79,7 @@
             margin-right: 15px;
         }
         .social-info { display: flex; flex-direction: column; }
-        .social-name { font-weight: bold; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px; }
+        .social-name { font-weight: bold; font-size: 0.9em; text-transform: uppercase; }
         .social-user { font-size: 0.7em; color: #C0C0C0; }
 
         .ad-container {
@@ -107,7 +101,7 @@
         </div>
 
         <div class="social-links">
-            <a href="https://t.me/yamillermusic" class="social-card telegram" target="_blank">
+            <a href="https://t.me/yamillermusic" class="social-card" target="_blank">
                 <i class="fab fa-telegram-plane"></i>
                 <div class="social-info">
                     <span class="social-name">Telegram</span>
@@ -115,7 +109,7 @@
                 </div>
             </a>
 
-            <a href="https://soundcloud.com/yamiller" class="social-card soundcloud" target="_blank">
+            <a href="https://soundcloud.com/yamiller" class="social-card" target="_blank">
                 <i class="fab fa-soundcloud"></i>
                 <div class="social-info">
                     <span class="social-name">SoundCloud</span>
@@ -123,7 +117,7 @@
                 </div>
             </a>
 
-            <a href="https://tiktok.com/@yamiller.music" class="social-card tiktok" target="_blank">
+            <a href="https://tiktok.com/@yamiller.music" class="social-card" target="_blank">
                 <i class="fab fa-tiktok"></i>
                 <div class="social-info">
                     <span class="social-name">TikTok</span>
@@ -131,7 +125,7 @@
                 </div>
             </a>
 
-            <a href="https://instagram.com/yamiller.music" class="social-card instagram" target="_blank">
+            <a href="https://instagram.com/yamiller.music" class="social-card" target="_blank">
                 <i class="fab fa-instagram"></i>
                 <div class="social-info">
                     <span class="social-name">Instagram</span>
@@ -139,7 +133,7 @@
                 </div>
             </a>
 
-            <a href="https://youtube.com/@yamiller.musicc" class="social-card youtube" target="_blank">
+            <a href="https://youtube.com/@yamiller.musicc" class="social-card" target="_blank">
                 <i class="fab fa-youtube"></i>
                 <div class="social-info">
                     <span class="social-name">YouTube</span>
