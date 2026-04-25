@@ -12,25 +12,38 @@
         }
 
         body {
-            /* Додаємо динамічний кіберпанк-фон */
-            background: radial-gradient(circle at 10% 20%, rgba(0, 243, 255, 0.05) 0%, #050505 50%),
-                        radial-gradient(circle at 90% 80%, rgba(255, 0, 0, 0.05) 0%, #050505 50%),
-                        #050505;
-            /* Сюди можна додати посилання на фоновий арт з Кібер-Мавкою */
-            background-image: url('ВАШЕ_ФОТО_ФОНУ.jpg'); 
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
-            
             color: #00F3FF;
             font-family: 'Courier New', monospace;
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
             min-height: 100vh;
             margin: 0;
             padding: 40px 10px;
             overflow-x: hidden;
+
+            /* --- НОВІ РЯДКИ ДЛЯ ФОНУ --- */
+            
+            /* Спершу залишаємо чорний колір як основу, якщо картинка довго вантажиться */
+            background-color: #050505; 
+            
+            /* Вказуємо шлях до твого файлу */
+            background-image: url('content_monitors.png'); 
+            
+            /* Картинка має розтягнутися на весь екран */
+            background-size: cover; 
+            
+            /* Картинка не повинна повторюватися ("плиткою") */
+            background-repeat: no-repeat; 
+            
+            /* Картинка має бути по центру */
+            background-position: center; 
+            
+            /* Ефект "фіксованого" фону при прокрутці (дуже стильно) */
+            background-attachment: fixed; 
+            
+            /* --- КІНЕЦЬ НОВИХ РЯДКІВ --- */
         }
 
         /* Ефект віньєтки, щоб центр завжди був читабельним */
