@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NS0FNF8W62"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-NS0FNF8W62');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YaMiller | Technological Rebirth</title>
     <link rel="icon" type="image/png" href="avatarrrr (1).png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        * {
-            box-sizing: border-box;
-        }
+        * { box-sizing: border-box; }
 
         body {
             color: #00F3FF;
@@ -22,20 +28,15 @@
             margin: 0;
             padding: 40px 10px;
             overflow-x: hidden;
-
             background-color: #050505; 
             background-image: url('content_monitorss.png'); 
             background-size: cover; 
             background-repeat: no-repeat; 
-            /* Фіксуємо, щоб не було стрибків при скролі */
             background-attachment: fixed; 
             background-position: center 0px;
-            
-            /* Плавний перехід для властивості позиції */
             transition: background-position 0.1s ease-out;
         }
 
-        /* Ефект віньєтки */
         body::before {
             content: "";
             position: fixed;
@@ -56,7 +57,6 @@
             max-width: 480px;
             border-radius: 15px;
             position: relative;
-            transition: transform 0.3s ease;
             z-index: 1;
         }
 
@@ -76,7 +76,6 @@
             overflow: hidden;
             border: 1px solid #00F3FF;
             margin-bottom: 20px;
-            width: 100%;
             border-radius: 8px;
         }
         .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
@@ -98,7 +97,6 @@
             border: 1px solid rgba(0, 243, 255, 0.2);
             background: rgba(255, 255, 255, 0.02);
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            text-align: left;
             border-radius: 10px;
         }
 
@@ -109,44 +107,27 @@
             transform: translateY(-2px);
         }
 
-        .social-card i {
-            font-size: 1.6em;
-            width: 40px;
-            text-align: center;
-            margin-right: 15px;
-            flex-shrink: 0;
-        }
+        .social-card i { font-size: 1.6em; width: 40px; text-align: center; margin-right: 15px; }
 
         .fa-youtube { color: #FF0000; }
+        .fa-spotify { color: #1DB954; }
         .fa-telegram-plane { color: #26A5E4; }
         .fa-soundcloud { color: #FF5500; }
         .fa-tiktok { color: #FFF; }
         .fa-instagram { color: #E1306C; }
-        .fa-spotify { color: #1DB954; }
 
-        .social-info { display: flex; flex-direction: column; }
-        .social-name { font-weight: bold; font-size: 0.95em; text-transform: uppercase; letter-spacing: 1px; }
+        .social-info { display: flex; flex-direction: column; text-align: left; }
+        .social-name { font-weight: bold; font-size: 0.95em; text-transform: uppercase; }
         .social-user { font-size: 0.7em; color: #888; }
 
-        .spotify-widget {
-            margin: 20px 0;
-            filter: drop-shadow(0 0 15px rgba(29, 185, 84, 0.2));
-        }
-
-        .ad-container {
-            margin-top: 30px;
-            padding: 5px;
-            border: 1px dashed #333;
-            width: 100%;
-            opacity: 0.6;
-        }
+        .spotify-widget { margin: 20px 0; filter: drop-shadow(0 0 15px rgba(29, 185, 84, 0.2)); }
+        .ad-container { margin-top: 30px; padding: 5px; border: 1px dashed #333; opacity: 0.6; }
     </style>
 </head>
 <body>
 
     <div class="container">
         <img src="avatarr.png" alt="YaMiller" style="width: 140px; height: auto; margin-bottom: 10px; filter: drop-shadow(0 0 15px #00F3FF);">
-        
         <div class="tagline">Technological Rebirth of Ukraine</div>
         
         <div class="video-container">
@@ -154,7 +135,7 @@
         </div>
 
         <div class="spotify-widget">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/0iXMwOsRZd7pNMaLHel1FR?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2SUp914pIsK91l9H61v1K8?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
 
         <div class="social-links">
@@ -166,7 +147,7 @@
                 </div>
             </a>
 
-            <a href="https://open.spotify.com/artist/0iXMwOsRZd7pNMaLHel1FR?si=zhOV8l5cRbylGwnmDnW4Nw" class="social-card" target="_blank">
+            <a href="https://open.spotify.com/artist/5X4x261W8vF94444444444" class="social-card" target="_blank">
                 <i class="fab fa-spotify"></i>
                 <div class="social-info">
                     <span class="social-name">Spotify</span>
@@ -186,7 +167,7 @@
                 <i class="fab fa-soundcloud"></i>
                 <div class="social-info">
                     <span class="social-name">SoundCloud</span>
-                    <span class="social-user">soundcloud.com/yamiller</span>
+                    <span class="social-user">yamiller</span>
                 </div>
             </a>
 
@@ -194,14 +175,6 @@
                 <i class="fab fa-tiktok"></i>
                 <div class="social-info">
                     <span class="social-name">TikTok</span>
-                    <span class="social-user">@yamiller.music</span>
-                </div>
-            </a>
-
-            <a href="https://instagram.com/yamiller.music" class="social-card" target="_blank">
-                <i class="fab fa-instagram"></i>
-                <div class="social-info">
-                    <span class="social-name">Instagram</span>
                     <span class="social-user">@yamiller.music</span>
                 </div>
             </a>
@@ -214,13 +187,10 @@
 
     <script>
         let ticking = false;
-
         window.addEventListener('scroll', function() {
             if (!ticking) {
                 window.requestAnimationFrame(function() {
                     const scrollY = window.scrollY;
-                    // 0.03 — фон майже стоїть, але ледь помітно рухається
-                    // transition у CSS зробить цей рух м'яким
                     document.body.style.backgroundPositionY = (scrollY * 0.03) + 'px';
                     ticking = false;
                 });
@@ -228,8 +198,6 @@
             }
         });
     </script>
-
     <script async="async" data-cfasync="false" src="https://pl29224709.profitablecpmratenetwork.com/03c06bcff4c72b2dd03d22c4d73a287d/invoke.js"></script>
-
 </body>
 </html>
