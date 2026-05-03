@@ -33,7 +33,7 @@
             background-size: cover; 
             background-repeat: no-repeat; 
             background-attachment: fixed; 
-            background-position: center 0px;
+            background-position: center center;
             transition: background-position 0.1s ease-out;
         }
 
@@ -119,13 +119,13 @@
         }
 
         .fa-youtube { color: #FF0000; }
+        .fa-spotify { color: #1DB954; }
+        .fa-apple { color: #FFFFFF; }
+        .fa-x-twitter { color: #FFFFFF; }
         .fa-telegram-plane { color: #26A5E4; }
         .fa-soundcloud { color: #FF5500; }
         .fa-tiktok { color: #FFF; }
         .fa-instagram { color: #E1306C; }
-        .fa-spotify { color: #1DB954; }
-        .fa-apple { color: #FFFFFF; }
-        .fa-x-twitter { color: #FFFFFF; }
 
         .social-info { display: flex; flex-direction: column; }
         .social-name { font-weight: bold; font-size: 0.95em; text-transform: uppercase; letter-spacing: 1px; }
@@ -177,10 +177,11 @@
         </div>
 
         <div class="spotify-widget">
-            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/0iXMwOsRZd7pNMaLHel1FR?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/0iXMwOsRZd7pNMaLHel1FR?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
 
         <div class="social-links">
+            <!-- YouTube -->
             <a href="https://youtube.com/@yamiller.musicc" class="social-card" target="_blank">
                 <i class="fab fa-youtube"></i>
                 <div class="social-info">
@@ -189,6 +190,7 @@
                 </div>
             </a>
 
+            <!-- Spotify -->
             <a href="https://open.spotify.com/artist/0iXMwOsRZd7pNMaLHel1FR?si=yhnBfimoTkiImNwkN1sUEg" class="social-card" target="_blank">
                 <i class="fab fa-spotify"></i>
                 <div class="social-info">
@@ -197,6 +199,7 @@
                 </div>
             </a>
 
+            <!-- Apple Music -->
             <a href="https://music.apple.com/ua/album/%D0%BC%D0%B8-%D0%B2-%D1%80%D0%B8%D1%82%D0%BC%D1%96-%D0%B2%D0%BE%D0%B3%D0%BD%D1%8E/1860950933?l=uk" class="social-card" target="_blank">
                 <i class="fab fa-apple"></i>
                 <div class="social-info">
@@ -205,6 +208,7 @@
                 </div>
             </a>
 
+            <!-- X.com -->
             <a href="https://x.com/YaMiller_Music" class="social-card" target="_blank">
                 <i class="fab fa-x-twitter"></i>
                 <div class="social-info">
@@ -213,6 +217,7 @@
                 </div>
             </a>
 
+            <!-- Telegram -->
             <a href="https://t.me/yamillermusic" class="social-card" target="_blank">
                 <i class="fab fa-telegram-plane"></i>
                 <div class="social-info">
@@ -221,6 +226,7 @@
                 </div>
             </a>
 
+            <!-- SoundCloud -->
             <a href="https://soundcloud.com/yamiller" class="social-card" target="_blank">
                 <i class="fab fa-soundcloud"></i>
                 <div class="social-info">
@@ -229,6 +235,7 @@
                 </div>
             </a>
 
+            <!-- TikTok -->
             <a href="https://tiktok.com/@yamiller.music" class="social-card" target="_blank">
                 <i class="fab fa-tiktok"></i>
                 <div class="social-info">
@@ -237,6 +244,7 @@
                 </div>
             </a>
 
+            <!-- Instagram -->
             <a href="https://instagram.com/yamiller.music" class="social-card" target="_blank">
                 <i class="fab fa-instagram"></i>
                 <div class="social-info">
@@ -262,14 +270,13 @@
             if (!ticking) {
                 window.requestAnimationFrame(function() {
                     const scrollY = window.scrollY;
-                    document.body.style.backgroundPositionY = (scrollY * 0.03) + 'px';
+                    document.body.style.backgroundPositionY = 'center ' + (scrollY * 0.03) + 'px';
                     ticking = false;
                 });
                 ticking = true;
             }
         });
     </script>
-
     <script async="async" data-cfasync="false" src="https://pl29224709.profitablecpmratenetwork.com/03c06bcff4c72b2dd03d22c4d73a287d/invoke.js"></script>
 
 </body>
